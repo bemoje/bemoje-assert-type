@@ -1,0 +1,88 @@
+{
+   "name": "@bemoje/assert-type",
+   "version": "1.0.0",
+   "description": "Perform easy type-checks with a simple type assertion.",
+   "main": "dist/assert-type.umd.js",
+   "module": "dist/assert-type.esm.js",
+   "browser": "dist/assert-type.umd.js",
+   "github": {
+      "user": "bemoje"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/bemoje/bemoje-assert-type.git"
+   },
+   "scripts": {
+      "test": "jest",
+      "example": "node -r esm examples/assert-type.example.js",
+      "docs": "documentation build src/** -f md -o docs/api.md && documentation build src/** -f html -o docs",
+      "rollup": "rollup -c",
+      "bench": "node -r esm benchmark/assert-type.benchmark.js",
+      "repo": "node -r esm scripts/repo.js",
+      "clean": "rimraf",
+      "version": "npm run repo version",
+      "major": "npm run repo bumpVersionMajor",
+      "minor": "npm run repo bumpVersionMinor",
+      "patch": "npm run repo bumpVersionPatch",
+      "readme": "npm run repo writeReadme",
+      "rename": "npm run repo rename",
+      "description": "npm run repo description",
+      "keywords": "npm run repo keywords",
+      "build": "npm run test && npm run bench && npm run rollup && npm run docs && npm run description && npm run keywords && npm run readme",
+      "commit": "npm run repo gitCommit",
+      "git-delete": "rimraf .git && bash scripts/github-delete.sh bemoje bemoje-assert-type",
+      "git-create": "rimraf .git && npm run repo gitCreate",
+      "publish": "npm run repo npmPublish"
+   },
+   "bugs": {
+      "url": "https://github.com/bemoje/bemoje-assert-type/issues",
+      "email": "bemoje@gmail.com"
+   },
+   "author": {
+      "name": "Benjamin M. Jensen",
+      "email": "bemoje@gmail.com",
+      "web": "https://github.io/bemoje/"
+   },
+   "license": "MIT",
+   "dependencies": {
+      "@bemoje/is-array": "^1.0.0",
+      "@bemoje/is-node": "^1.0.0",
+      "@bemoje/is-null": "^1.0.0",
+      "@bemoje/is-type": "^1.0.0",
+      "@bemoje/is-undefined": "^3.0.3",
+      "@bemoje/throw-type-error": "^1.0.0"
+   },
+   "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-jest": "^25.4.0",
+      "babel-preset-env": "^1.7.0",
+      "documentation": "^12.3.0",
+      "esm": "^3.2.25",
+      "fs-extra": "^9.0.0",
+      "hirestime": "^6.0.1",
+      "jest": "^24.9.0",
+      "keyword-extractor": "0.0.18",
+      "path": "^0.12.7",
+      "rimraf": "^3.0.2",
+      "rollup": "^1.32.1",
+      "rollup-plugin-commonjs": "^10.1.0",
+      "rollup-plugin-node-resolve": "^5.2.0",
+      "walk-sync": "^2.1.0"
+   },
+   "keywords": [
+      "perform",
+      "easy",
+      "type-checks",
+      "simple",
+      "type",
+      "assertion",
+      "constructors",
+      "expected",
+      "type's",
+      "accepted",
+      "constructor",
+      "null",
+      "evaluate",
+      "asserttype"
+   ]
+}
