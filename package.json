@@ -1,6 +1,6 @@
 {
    "name": "@bemoje/assert-type",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "Perform easy type-checks with a simple type assertion.",
    "main": "dist/assert-type.umd.js",
    "module": "dist/assert-type.esm.js",
@@ -48,13 +48,13 @@
       "@bemoje/is-array": "^1.0.0",
       "@bemoje/is-node": "^1.0.0",
       "@bemoje/is-null": "^1.0.0",
-      "@bemoje/is-type": "^1.0.0",
+      "@bemoje/is-type": "^1.0.1",
       "@bemoje/is-undefined": "^3.0.3",
       "@bemoje/throw-type-error": "^1.0.0"
    },
    "devDependencies": {
       "babel-core": "^6.26.3",
-      "babel-jest": "^25.4.0",
+      "babel-jest": "^25.5.1",
       "babel-preset-env": "^1.7.0",
       "documentation": "^12.3.0",
       "esm": "^3.2.25",
